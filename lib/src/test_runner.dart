@@ -75,6 +75,10 @@ class GherkinRunner {
 
       for (final pattern in config.features) {
         final paths = await config.featureFileMatcher.listFiles(pattern);
+        await _reporter.message(
+          "Try paths '$paths'",
+          MessageLevel.verbose,
+        );
 
         for (final path in paths) {
           await _reporter.message(
