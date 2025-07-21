@@ -1,5 +1,3 @@
-library gherkin;
-
 export 'src/configuration.dart';
 // Parser
 export 'src/gherkin/ast/feature_file_visitor.dart';
