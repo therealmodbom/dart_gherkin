@@ -115,7 +115,7 @@ class GherkinRunner {
       throw Exception(
         'Error when trying to find feature files with patterns'
         '${config.features.map((e) => e.toString()).join(', ')}`'
-        'ERROR: `${e.toString()}`',
+        'ERROR: `${e}`',
       );
     }
   }
